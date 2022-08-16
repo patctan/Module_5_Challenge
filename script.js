@@ -3,7 +3,8 @@ var templateLiteral = "This is a template literal";
 var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 
-var time = today.format("h");
+var currentTime = today.format("hh a");
+console.log(currentTime);
 
 $(document).ready(function () {
   console.log(`hello ${templateLiteral}`);
@@ -24,3 +25,11 @@ $(document).ready(function () {
       .val(toDo);
   }
 });
+
+// if (moment(currentTime).isAfter
+
+// for (var i = 9; i < 18; i++) {
+//   if ($("#" + `${i}`) < currentTime) {
+//     $("#" + `${i}`).addClass('')
+//   }
+// }
