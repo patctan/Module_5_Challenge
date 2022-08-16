@@ -26,10 +26,17 @@ $(document).ready(function () {
   }
 });
 
-// if (moment(currentTime).isAfter
+for (var i = 9; i < 18; i++) {
+  var innerHTMLTime = $("#" + `${i}`).innerHTML;
+  let myJSONTime = JSON.stringify(currentTime);
+  console.log("myJSONTime is" + myJSONTime);
+  console.log("innerHTMLTime is" + innerHTMLTime);
 
-// for (var i = 9; i < 18; i++) {
-//   if ($("#" + `${i}`) < currentTime) {
-//     $("#" + `${i}`).addClass('')
-//   }
-// }
+  if (myJSONTime === innerHTMLTime) {
+    addClass("current");
+  } else if (myJSONTime > innerHTMLTime) {
+    addClass("past");
+  } else {
+    addClass("future");
+  }
+}
