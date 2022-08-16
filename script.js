@@ -27,16 +27,22 @@ $(document).ready(function () {
 });
 
 for (var i = 9; i < 18; i++) {
-  var innerHTMLTime = $("#" + `${i}`).innerHTML;
+  var innerHTMLTime = $("#" + `${i}`);
   let myJSONTime = JSON.stringify(currentTime);
   console.log("myJSONTime is" + myJSONTime);
   console.log("innerHTMLTime is" + innerHTMLTime);
 
-  if (myJSONTime === innerHTMLTime) {
-    addClass("current");
+  if (myJSONTime == innerHTMLTime) {
+    $("#" + `${i}`)
+      .siblings(".toDo")
+      .addClass("current");
   } else if (myJSONTime > innerHTMLTime) {
-    addClass("past");
+    $("#" + `${i}`)
+      .siblings(".toDo")
+      .addClass("past");
   } else {
-    addClass("future");
+    $("#" + `${i}`)
+      .siblings(".toDo")
+      .addClass("future");
   }
 }
