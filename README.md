@@ -17,3 +17,7 @@ Screenshots:
 ![First Screenshot](<assets/Screenshot%20(31).png>)
 
 ![Second Screenshot](<assets/Screenshot%20(32).png>)
+
+Link to deployed branch:
+
+https://patctan.github.io/Module_5_Challenge/
