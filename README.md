@@ -14,6 +14,6 @@ Additionally, I would like to change the colors for the "past" and "future" time
 
 Screenshots:
 
-![alt First Screenshot](assets\Screenshot (31).png)
+![First Screenshot](<assets/Screenshot%20(31).png>)
 
-![alt Second Screenshot](assets\Screenshot (32).png)
+![Second Screenshot](<assets/Screenshot%20(32).png>)
