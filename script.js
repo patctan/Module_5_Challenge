@@ -1,6 +1,8 @@
 var templateLiteral = "This is a template literal";
 
 var today = moment();
+
+//Display's today's date
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 
 var currentTime = today.format("HH");
@@ -9,6 +11,7 @@ console.log("This is my currentTime" + currentTime);
 $(document).ready(function () {
   console.log(`hello ${templateLiteral}`);
 
+  //Saves text to local storage
   $(".btn").click(function (e) {
     e.preventDefault();
     console.log("clicked");
@@ -18,6 +21,7 @@ $(document).ready(function () {
     localStorage.setItem(time, toDo);
   });
 
+  //Retrieves text from local storage
   for (var i = 9; i < 18; i++) {
     let toDo = localStorage.getItem(`${i}`);
     $("#" + `${i}`)
@@ -26,6 +30,7 @@ $(document).ready(function () {
   }
 });
 
+//Changes color of text boxes depending on the time.
 for (var i = 9; i < 18; i++) {
   var innerHTMLTime = i;
   console.log("innerHTMLTime is " + innerHTMLTime);
